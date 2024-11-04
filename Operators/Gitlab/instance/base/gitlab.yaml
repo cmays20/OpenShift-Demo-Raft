@@ -19,13 +19,14 @@ spec:
           ingress:
             tls:
               secretName: kas-tls
-        ingress:
-          tls:
-            secretName: registry-tls
       minio:
         ingress:
           tls:
             secretName: minio-tls
+      registry:
+        ingress:
+          tls:
+            secretName: registry-tls
       global:
         hosts:
           domain: example.com
