@@ -16,6 +16,8 @@ spec:
         ingress:
           class: none
           configureCertmanager: false
+          annotations:
+            route.openshift.io/termination: "edge"
           tls:
             enabled: false
         email:
