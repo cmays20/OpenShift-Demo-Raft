@@ -10,33 +10,14 @@ spec:
     values:
       prometheus:
         install: false
-      gitlab:
-        webservice:
-          ingress:
-            tls:
-              secretName: gitlab-tls
-        kas:
-          ingress:
-            tls:
-              secretName: kas-tls
-      minio:
-        ingress:
-          tls:
-            secretName: minio-tls
-      registry:
-        ingress:
-          tls:
-            secretName: registry-tls
       global:
         hosts:
           domain: example.com
         ingress:
           class: none
           configureCertmanager: false
-          annotations:
-            route.openshift.io/termination: "edge"
-            kubernetes.io/tls-acme: true
-            cert-manager.io/cluster-issuer: acme-prod-issuer
+          tls:
+            enabled: false
         email:
           display_name: "GitLab"
           from: "chmays@redhat.com"
