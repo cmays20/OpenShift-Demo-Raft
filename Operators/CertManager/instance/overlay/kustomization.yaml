@@ -16,7 +16,7 @@ patches:
         value: 'cmays@outlook.com'
       - op: replace
         path: /spec/acme/solvers/0/dns01/route53/hostedZoneID
-        value: Z02645251UHWWU0D6ZY45
+        value: Z02924083DMJX83EBOYYC
   - target:
       group: cert-manager.io
       version: v1
@@ -25,7 +25,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/commonName
-        value: '*.apps.mays-demo.sandbox2448.opentlc.com'
+        value: '*.apps.mays-demo.sandbox2670.opentlc.com'
       - op: replace
         path: /spec/dnsNames/0
-        value: '*.apps.mays-demo.sandbox2448.opentlc.com'
+        value: '*.apps.mays-demo.sandbox2670.opentlc.com'
