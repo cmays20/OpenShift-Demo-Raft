@@ -40,4 +40,4 @@ spec:
         enabled: false
       certmanager:
         install: false
-    version: 8.7.2
+    version: 8.11.4
